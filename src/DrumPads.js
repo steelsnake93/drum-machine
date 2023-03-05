@@ -1,4 +1,4 @@
-const drumPads = [
+const DrumPads = [
     {
         keyCode: 81,
         text: "Q",
@@ -43,7 +43,7 @@ const drumPads = [
         keyCode: 67,
         text: "C",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
-    },
+    }
 ];
 
-export default drumPads;
+export default DrumPads;
