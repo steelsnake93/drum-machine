@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import DrumPads from "./DrumPads";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DrumPad({drumPad, onPlay}) {
     const [activeKey, setActiveKey] = useState(false);
@@ -26,7 +27,7 @@ function DrumPad({drumPad, onPlay}) {
 
     return (
         <div
-            className={`drum-pad ${activeKey ? "active" : ""}`}
+            className={`btn btn-primary drum-pad ${activeKey ? "active" : ""}`}
             onClick={handlePlaySound}
             id={drumPad.src}
         >
@@ -44,6 +45,8 @@ export default function App() {
     }
     // Set up the HTML structure
     return (
+        <div className="main">
+            <header className="p-5 bg-warning"></header>
         <div className="App">
             <div id="drum-machine">
                 <div id="display">{activeKey}</div>
@@ -53,6 +56,7 @@ export default function App() {
                     ))}
                 </div>
             </div>
+        </div>
         </div>
     );
 }

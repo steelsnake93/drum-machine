@@ -2,24 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 2rem;
 }
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+}
+
 
 .App {
     display: flex;
     justify-content: center;
-    margin-top: 33vh;
+    align-self: center;
 }
 
 .drum-pads {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
 }
 
 .drum-pad {
-    border: 1px solid black;
+    border: none;
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#drum-machine {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div > .btn:hover {
+    background-color: #38c73f;
+}
+
+.main{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+
+#display {
+    height: 100px;
 }
