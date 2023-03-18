@@ -28,8 +28,6 @@ This is a drum machine web application built using HTML, CSS, and JavaScript. It
 2. Navigate to the project directory using a terminal or command prompt.
 3. Open index.html in your browser.
 
-Alternatively, you can visit the hosted version of the app at drum-machine-ai.netlify.app.
-
 ## Future Improvements
 - Implement more audio samples.
 - Add a volume control feature.
